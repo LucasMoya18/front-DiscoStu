@@ -1,37 +1,24 @@
 import Layout from '../components/Layout'
 import Pie from '../components/Pie';
 import BlogCard, { BlogCardBody } from '../components/BlogCard';
+import InfoBlog from '../components/InfoBlog';
 
 function Blog(){
     document.body.classList.add('cuerpoHome');
-
+    const blogInfo = InfoBlog();
     return(
         <>
             <Layout/>
             <div className='container'>
-                <div className='justify-content-center align-content-center d-flex my-5'>
-                    <BlogCard imgRoute='/src/assets/imgs/concierto.jpg'>
-                        <BlogCardBody title="Publicacion 1" text="Texto" subtext='Subtexto'/>
-                    </BlogCard>
-                </div>
+                {blogInfo.map((item,index)=>{
+                    return (
+                    <div className='justify-content-center align-content-center d-flex my-5' key={index}>
+                        <BlogCard imgRoute={item.imgSrc}>
+                            <BlogCardBody title={item.titulo} text={item.detalle} subtext={item.fecha}/>
+                        </BlogCard>
+                    </div>)
+                })}
                 
-                <div className='justify-content-center align-content-center d-flex my-5'>
-                    <BlogCard imgRoute='/src/assets/imgs/concierto.jpg'>
-                        <BlogCardBody title="Publicacion 2" text="Texto" subtext='Subtexto'/>
-                    </BlogCard>
-                </div>
-                
-                <div className='justify-content-center align-content-center d-flex my-5'>
-                    <BlogCard imgRoute='/src/assets/imgs/concierto.jpg'>
-                        <BlogCardBody title="Publicacion 3" text="Texto" subtext='Subtexto'/>
-                    </BlogCard>
-                </div>
-                
-                <div className='justify-content-center align-content-center d-flex my-5'>
-                    <BlogCard imgRoute='/src/assets/imgs/concierto.jpg'>
-                        <BlogCardBody title="Publicacion 4" text="Texto" subtext='Subtexto'/>
-                    </BlogCard>
-                </div>
             </div>
             <Pie/>
         </>

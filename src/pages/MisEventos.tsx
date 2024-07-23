@@ -37,7 +37,9 @@ function MisEventos(){
     return(
         <>
             <Layout/>
-                <Container>
+
+                {isAuth ? (<>
+                    <Container>
                     <div className="row">
 
                         <div className="col-0 col-md-2"></div>
@@ -66,7 +68,9 @@ function MisEventos(){
                         </div>
                     </div>
                 </Container>
-            <Pie/>
+            <Pie/></>) :(<>
+                <h1 className="text-light text-center my-5">No estas logueado</h1></>)}
+ 
         </>
         
     )

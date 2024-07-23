@@ -17,7 +17,7 @@ function Eventos(){
 
                     {eventos.map((item)=>{
                         return(
-                            <div className="col-12 col-md-6 justify-content-center align-content-center d-flex mb-5" key={item.id}>
+                            <div className="col-12 col-md-6 text-center justify-content-center align-content-center d-flex mb-5" key={item.id}>
                                 <EventCard imgRoute={item.img}>
                                     <EventCardBody
                                         title={item.titulo}

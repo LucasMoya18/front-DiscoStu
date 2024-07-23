@@ -43,22 +43,22 @@ function Home() {
           <div className="col-12 titulo-Home-Eventos text-center">
             <h1 className="">EVENTOS DESTACADOS</h1>
           </div>
-          <div className="col-12 col-md-6 justify-content-center align-content-center d-flex mb-5" key={101}>
-            <EventCard imgRoute="/src/assets/imgs/img-eventos/id101.jpg">
+          <div className="col-12 col-md-6 justify-content-center align-content-center d-flex mb-5 text-center" key={101}>
+            <EventCard imgRoute="/src/assets/imgs/img-eventos/disco101.jpg">
               <EventCardBody
-                title="Noche de Electrónica en Santiago"
-                text="Una velada de música electrónica con los mejores DJs del mundo en el corazón de Santiago."
+                title="Fiesta Disco Electrónica en Santiago"
+                text="Una noche mágica de música electrónica y luces brillantes en Disco Stu en Santiago."
                 artistas="David Guetta, Martin Garrix, Armin van Buuren, Steve Aoki"
                 subtext="15 de agosto de 2024"
                 eventId={101}
               />
             </EventCard>
           </div>
-          <div className="col-12 col-md-6 justify-content-center align-content-center d-flex mb-5" key={102}>
-            <EventCard imgRoute="/src/assets/imgs/img-eventos/id102.jpg">
+          <div className="col-12 col-md-6 justify-content-center align-content-center d-flex mb-5 text-center" key={102}>
+            <EventCard imgRoute="/src/assets/imgs/img-eventos/disco102.jpg">
               <EventCardBody
-                title="Festival de Rock en Valparaiso"
-                text="Un festival de rock con las bandas más legendarias y nuevos talentos en la vibrante ciudad de Valparaíso."
+                title="Rock & Roll Night en Disco Stu Valparaíso"
+                text="Una noche de rock & roll épica en Disco Stu Valparaíso con las mejores bandas del género."
                 artistas="Foo Fighters, Linkin Park, The Killers, Arctic Monkeys"
                 subtext="20 y 21 de septiembre de 2024"
                 eventId={102}
