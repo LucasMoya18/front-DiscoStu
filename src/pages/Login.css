@@ -1,0 +1,53 @@
+.cuerpoLog{
+    background-image: url('../assets/imgs/Synthwave_Background.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.formDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 23vh;
+    
+}
+
+.formulario{
+    font-family: 'LemonMilk';
+    width: 350px;
+    backdrop-filter: blur(40px);
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 255, 0.468);
+    border-width: 4px;
+    border-style: groove;
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.divtextoErr{
+    font-size: 15px;
+    margin-top: -1vh;
+    height: 4vh;
+    margin-bottom: 1vh;
+    color: white;
+}
+
+.titulo{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.boton-acept{
+    width: 100px;
+    background-color: rgba(78, 2, 78, 0.566) !important;
+    color: white !important;
+}
+.boton-acept:hover{
+    background-color: rgba(104, 4, 104, 0.333) !important;
+}
+.log-inputs{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,120 @@
+.active{
+    background-color: #7b0fad45;
+}
+.img-LogoNav{
+    width: 350px;
+    height: 90px !important;
+}
+nav .title {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+   list-style: none; 
+   margin-top: 1rem;
+   margin-right:10px;
+   font-size: 13px;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    font-family: 'LemonMilk';
+}
+
+
+nav ul li a:not(.active):hover {
+    background-color:#17255456 ;                        
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+
+@media (max-width: 720px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+
+}
+
+.botonLogin{
+    background-color: #7511c1dc !important;
+}
+
+.botonLogin:hover{
+    background-color: #8b11b884 !important;
+}
+.NavDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg,#8b11b884,#3511b8a8);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+.imagenLogo{
+    width: 70px;
+    height: 30px;
+}
+
+.user-home-p{
+    margin-top: .55rem;
+    font-family: 'LemonMilk';
+    font-size: 13px;
+}
+

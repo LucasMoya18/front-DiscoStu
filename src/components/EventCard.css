@@ -1,0 +1,29 @@
+.card-div{
+    width: 100%;
+    background: linear-gradient(#02d1ff9d, #ff07f3);
+}
+
+.card-b{
+    color: white !important;
+}
+.img-card{
+    width: 100%;
+    max-height: 50vh;
+}
+.card-b{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-b-Title{
+    font-size: 30px;
+    margin-bottom: 20px !important;
+}
+
+.btn-card{
+    background-color: rgba(153, 0, 255, 0.575) !important;
+}
+
+.btn-card:hover{
+    border-width: 2px !important;
+    border-style: groove !important;
+    border-color: white !important;
+}

@@ -1,0 +1,87 @@
+.titulo-evento-especifico{
+    box-shadow: 0 0 70px #000000;
+    background: linear-gradient(45deg, rgba(255, 63, 49, 0.7), rgba(11, 3, 255, 0.7));
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-text-stroke: .8px black;
+}
+
+.descripcion-evento-especifico{
+    box-shadow: 0 0 70px #000000;
+    border-radius: 10px;
+    padding: 20px 40px 0 40px;
+    background: linear-gradient(45deg, rgba(255, 63, 49, 0.7), rgba(51, 46, 180, 0.7));
+    font-size: 21px;
+}
+
+.img-evento-detalle{
+    max-width: 500px !important;
+    border-radius: 10px;
+}
+
+.btn-reserva{
+    width: 30%;
+    height: 75px;
+    font-size: 20px!important;
+    background: linear-gradient(45deg,rgb(207, 49, 255),rgb(51, 46, 180));
+}
+
+.btn-reserva:hover{
+    background: linear-gradient(45deg,rgb(57, 16, 69),rgb(8, 0, 255));
+}
+
+.div-adelante{
+    z-index:2;
+}
+
+.formReservaDiv{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #000000bf;
+    transition: opacity .4s ease,visibility .4s ease, transform .5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+    z-index: 999;
+}
+
+.formReservaDiv.open{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.reserva{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.formReservaDiv.open svg{
+    position: fixed;
+    top:20px;
+    right: 10px;
+    width: 5rem;
+    font-size: 50px;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.error-div-form{
+    animation: parpadeoRojo 0.3s infinite;
+}
+
+@keyframes parpadeoRojo {
+    0%, 100% {
+        background-color: white;
+    }
+    50% {
+        background-color: rgb(249, 131, 131);
+    }
+}

@@ -1,0 +1,40 @@
+.mapa{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.mapa iframe{
+    left:0;
+    top:0;
+    height:75%;
+    width:100%;
+    position:absolute;
+}
+
+.mapaUbicacion{
+    border-style: groove;
+    border-width: 2px;
+    border-color: rgb(92, 152, 243);
+    border-radius: 20px;
+}
+
+.formulario-Cont{
+    font-family: 'LemonMilk';
+    width: 350px;
+    backdrop-filter: blur(40px);
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 255, 0.468);
+    border-width: 4px;
+    border-style: groove;
+    color: rgba(255, 255, 255, 0.658);
+    width: 100%;
+}
+
+.formulario-Cont input{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
