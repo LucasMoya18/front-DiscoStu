@@ -1,6 +1,6 @@
 .card-div{
     width: 100%;
-    background: linear-gradient(#02d1ff9d, #ff07f3);
+    background: linear-gradient(90deg,#ff02ffc7, #07deffc8);
 }
 
 .card-b{
@@ -16,6 +16,7 @@
 .card-b-Title{
     font-size: 30px;
     margin-bottom: 20px !important;
+    
 }
 
 .btn-card{

@@ -124,10 +124,10 @@ function Galeria() {
         <CloseFullscreenIcon onClick={() => setModelo(false)} />
       </div>
 
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
-          <div className="col-12">
-            <h1 className="titulo-galeria text-center text-light"> Galeria</h1>
+          <div className="col-12 ">
+            <h1 className="titulo-galeria text-center text-light titulo-evento-especifico" > Galeria</h1>
           </div>
         </div>
       </div>

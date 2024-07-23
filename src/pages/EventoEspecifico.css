@@ -3,7 +3,8 @@
     background: linear-gradient(45deg, rgba(255, 63, 49, 0.7), rgba(11, 3, 255, 0.7));
     border-radius: 10px;
     padding: 20px;
-    -webkit-text-stroke: .8px black;
+    -webkit-text-stroke: .4px black;
+    font-family: 'LemonMilk';
 }
 
 .descripcion-evento-especifico{
@@ -85,3 +86,4 @@
         background-color: rgb(249, 131, 131);
     }
 }
+

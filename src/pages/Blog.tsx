@@ -10,15 +10,19 @@ function Blog(){
         <>
             <Layout/>
             <div className='container'>
-                {blogInfo.map((item,index)=>{
-                    return (
-                    <div className='justify-content-center align-content-center d-flex my-5' key={index}>
-                        <BlogCard imgRoute={item.imgSrc}>
-                            <BlogCardBody title={item.titulo} text={item.detalle} subtext={item.fecha}/>
-                        </BlogCard>
-                    </div>)
-                })}
-                
+                <div className='row'>
+                    <div className='col-12 my-5 text-center text-white titulo-evento-especifico'>
+                        <h1>Blog</h1>
+                    </div>
+                    {blogInfo.map((item,index)=>{
+                        return (
+                        <div className='justify-content-center align-content-center d-flex my-5' key={index}>
+                            <BlogCard imgRoute={item.imgSrc}>
+                                <BlogCardBody title={item.titulo} text={item.detalle} subtext={item.fecha}/>
+                            </BlogCard>
+                        </div>)
+                    })}
+                </div>
             </div>
             <Pie/>
         </>

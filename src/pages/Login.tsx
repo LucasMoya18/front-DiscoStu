@@ -33,7 +33,7 @@ function Login() {
   }
 
   return (
-    <div className="contenido-login"> 
+    <div className="contenido-login align-content-center align-items-center justify-content-center"> 
       <div className="formDiv">
         <form className="formulario">
           <div className="text-center">

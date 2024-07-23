@@ -31,8 +31,8 @@ function Contacto() {
       <Layout />
       <div className="contacto container">
         <div className="row">
-          <div className="col-12">
-            <h1 className="titulocont text-center my-5">Contactanos!</h1>
+          <div className="col-12 ">
+            <h1 className="titulocont text-center my-5 titulo-evento-especifico text-white">Contactanos!</h1>
           </div>
           <div className="container col-12 col-xl-6">
             <form className="formulario-Cont">

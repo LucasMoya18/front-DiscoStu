@@ -11,7 +11,7 @@ function Eventos(){
             <Layout/>
             <div className="container">
                 <div className="row">
-                    <div className="col-12 div-titulo-eventospag text-center my-5">
+                    <div className="col-12 div-titulo-eventospag text-center my-5 titulo-evento-especifico">
                         <h1 className="text-light">EVENTOS</h1>
                     </div>
 
