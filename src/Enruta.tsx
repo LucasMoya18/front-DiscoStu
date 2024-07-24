@@ -9,7 +9,7 @@ import Eventos from './pages/Eventos';
 import EventoEspecifico from './pages/EventoEspecifico';
 import ScrollArriba from './components/ScrollArriba';
 import MisEventos from './pages/MisEventos';
-
+import NotFound from './pages/NotFound';
 
 
 function Enruta () {
@@ -26,6 +26,7 @@ function Enruta () {
                 <Route path="/galeria" element={<Galeria />} />
                 <Route path="/contacto" element={<Contacto />}/> 
                 <Route path="/blog" element={<Blog />} />
+                <Route path="*" element= {<NotFound/>}/>
             </Routes>
         </Router>
 

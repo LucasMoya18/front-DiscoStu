@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import "./Navbar1.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 function Navbar1() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [usuario,setUsuario] = useState('');
   const [isAuth, setisAuth] = useState(false);
-  
+  const navegar = useNavigate();
   useEffect(()=>{
     const authStatus = localStorage.getItem('autenticacion');
     const storedUser = localStorage.getItem('usuario');
@@ -21,6 +21,7 @@ function Navbar1() {
 
     localStorage.removeItem('autenticacion');
     localStorage.removeItem('usuario');
+    navegar('/')
 
   }
   return (
